@@ -27,6 +27,9 @@
     - Donante (No implementado)
     - Anónimo (No implementado)
 
+- Envio de Mails automaticos
+    - 
+
 
 - Path: **'/login'** - Ingreso al panel
 - Path: **'/panel'** [ADMIN] - Pagina principal del panel
