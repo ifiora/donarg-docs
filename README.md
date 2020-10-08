@@ -1,16 +1,16 @@
 # Documentación DonARG
 
-    https://donarg.quieroserdonante.com.ar/
+#### https://donarg.quieroserdonante.com.ar/
 
 ## FRONTEND PÚBLICO
 
-Path: '/' - Mapa
-    Tipos de Posta:
+- Path: **'/'** - Mapa
+    - Tipos de Posta:
         - Posta. Turnos todas las semanas.
         - Colecta. Turnos solo 1 dia puntual.
         - Centro. Solo información de contacto. (No maneja sus turnos por la plataforma).
-Path: '/sangre/{nombre_colecta} - Postas / Colectas de sangre
-Path: '/plasma/{nombre_colecta} - Postas / Colectas Colectas de plasma
+- Path: **'/sangre/{nombre_colecta}'** - Postas / Colectas de sangre
+- Path: **'/plasma/{nombre_colecta}'** - Postas / Colectas Colectas de plasma
     - Stepper con pasos
         - Paso 1:  
             Display de cards con contenido dinamico. (Turnos disponibles)
@@ -20,18 +20,18 @@ Path: '/plasma/{nombre_colecta} - Postas / Colectas Colectas de plasma
         - Paso 3: Confirmación del turno.
 
 ## PANEL 
-Roles: 
+- Roles: 
     - Admin
     - Posta
     - Donante (No implementado)
     - Anónimo (No implementado)
 
-Path: '/login' - Ingreso al panel
-Path: '/panel' [ADMIN] - Pagina principal del panel
+- Path: **'/login'** - Ingreso al panel
+- Path: **'/panel'** [ADMIN] - Pagina principal del panel
     - Listado de postas
     - Mapa de postas
 
-Path: '/panel/posta/{id_posta?}' [ADMIN] - Gestor de postas (ABM)
+- Path: **'/panel/posta/{id_posta?}'** [ADMIN] - Gestor de postas (ABM)
     - Modificacion de datos de la posta.
     - Turnos: 
         - Tabla de turnos.
@@ -42,9 +42,17 @@ Path: '/panel/posta/{id_posta?}' [ADMIN] - Gestor de postas (ABM)
         - Alta de horarios.
         - Cambio de cupos, habilitar / deshabilitar horario, borrar horario.
 
-Path: 'panel/planilla;{datos_planilla(id de laposta, año, mes, día)' [ADMIN,POSTA] - Impresión de planillas.
+- Path: **'panel/planilla;{datos_planilla(id de laposta, año, mes, día)'** [ADMIN,POSTA] - Impresión de planillas.
 
-Path: '/panel' [ADMIN,POSTA] - Pagina principal del panel
+- Path: **'/admin-posta'** [POSTA] - Pagina del administrador de la posta.
+    - Turnos: 
+        - Tabla de turnos.
+        - Impresión de la planilla de los turnos de cualquier dia.
+        - Cancelación de turnos.
+    - Horarios:
+        - Listado de Horarios habilitados.
+        - Alta de horarios.
+        - Cambio de cupos, habilitar / deshabilitar horario, borrar horario.
 
 
 
