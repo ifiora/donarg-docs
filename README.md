@@ -27,8 +27,8 @@
     - Donante (No implementado)
     - Anónimo (No implementado)
 
-- Envio de Mails automaticos
-    - 
+- Envio de Mails HTML
+    - [Template de Ejemplo](https://github.com/ifiora/donarg-docs/blob/master/confirmacion.html)
 
 
 - Path: **'/login'** - Ingreso al panel
