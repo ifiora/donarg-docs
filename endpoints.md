@@ -1,4 +1,4 @@
-# Epoints
+# Endpoints
 
 ## Home **'/v1'**
 
