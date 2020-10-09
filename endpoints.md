@@ -30,6 +30,7 @@
             usuario: Usuario
         }
 - Path: **POST** [ADMIN] **'/v1/auth/login/posta'** 
+
         Crea el usuario de una posta
         Request:
         {
@@ -46,6 +47,7 @@
         }
 
 - Path: **POST** [ADMIN] **'/v1/auth/login/check-admin'** 
+
         Valida si el usuario está logueado como admin y renueva el JWT de autenticación.
         Request:
         { }
@@ -54,6 +56,7 @@
         { }
 
 - Path: **POST** [ADMIN] **'/v1/auth/login/change-password-admin'** 
+
         Permite al administrador cambiar la contraseña de un usuario.
         Request:
         {
@@ -69,6 +72,7 @@
 ## Horario **'/v1/horario'**
 
 - Path: **POST** [ADMIN,POSTA] **'/v1/horario'** 
+
         Crea un nuevo horario.
         Request:
         {
@@ -82,6 +86,7 @@
             }
         }
 - Path: **PUT** [ADMIN,POSTA] **'/v1/horario'** 
+
         Modifica un horario.
         Request:
         {
@@ -98,6 +103,7 @@
         }
 
 - Path: **DELETE** [ADMIN,POSTA] **'/v1/horario'** 
+
         Obtiene el listado de turnos de una posta.
         Request:
         {
@@ -111,6 +117,7 @@
             loc: string;
         }
 - Path: **GET** [ADMIN,POSTA] **'/v1/horario/'** 
+
         Obtiene el listado de turnos de una posta.
         Request:
         {
@@ -124,6 +131,7 @@
         }
 
 - Path: **POST** **'/v1/horario/getPath'** 
+
         Obtiene los horarios de una posta recibiendo el path de la misma.
         Request:
         {
@@ -140,6 +148,7 @@
 ## Turno **'/v1/turno'**
 
 - Path: **POST** **'/v1/turno'** 
+
         Crea un turno y envía mail de confirmación.
         Request:
         {
@@ -180,6 +189,7 @@
             datos: Donante;
             loc: string;
         }
+
 - Path: **PUT** [ADMIN,POSTA] **'/v1/turno'** 
         NO IMPLEMENTADO
 
@@ -187,6 +197,7 @@
         NO IMPLEMENTADO
 
 - Path: **GET** [ADMIN,POSTA] **'/v1/turno/tabla'** 
+
         Obtiene los horarios de una posta recibiendo el path de la misma.
         Request:
         {
@@ -201,6 +212,7 @@
         }
 
 - Path: **POST** [ADMIN,POSTA] **'/v1/turno/planilla'** 
+
         Obtiene los datos para impresión de la planilla de donantes de un día de donación.
         Request:
         {
@@ -215,6 +227,7 @@
         }
 
 - Path: **POST** [ADMIN,POSTA] **'/v1/turno/cancelarAdmin'** 
+
         Permite al administrador cancelar un turno.
         Request:
         {
@@ -230,6 +243,7 @@
         }
         
 - Path: **POST** **'/v1/turno/cancelarGuid'** 
+
         Permite al usuario cancelar su turno con el guid del mismo.
         Request:
         {
@@ -245,6 +259,7 @@
         
 
 - Path: **POST** **'/v1/turno/getGuid'** 
+
         Datos para la pagina de cancelación.
         Request:
         {
@@ -263,6 +278,7 @@
 ## Posta **'/v1/posta'**
 
 - Path: **POST** [ADMIN,POSTA] **'/v1/posta'** 
+
         Crea una posta.
         Request:
         {
@@ -275,6 +291,7 @@
             loc: string;
         }
 - Path: **PUT** [ADMIN,POSTA] **'/v1/posta'** 
+
         Modifica una posta.
         Request:
         {
@@ -288,6 +305,7 @@
         }
         
 - Path: **DELETE** [ADMIN,POSTA] **'/v1/posta'** 
+
         Borra una posta.
         Request:
         {
@@ -301,6 +319,7 @@
             loc: string;
         }
 - Path: **GET** [ADMIN,POSTA] **'/v1/posta'** 
+
         Obtiene una o multiples posta si recibe id.
         Request:
         {
@@ -316,6 +335,7 @@
 
 
 - Path: **POST** **'/v1/posta/getPath'** 
+
         Obtiene los datos de la posta.
         Request:
         {
