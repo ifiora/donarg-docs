@@ -5,6 +5,7 @@
 ## Auth **'/v1/auth'**
 
 - Path: **POST**  **'/v1/auth/login'** 
+
         Login
         Request:
         {
@@ -29,6 +30,7 @@
         {
             usuario: Usuario
         }
+
 - Path: **POST** [ADMIN] **'/v1/auth/login/posta'** 
 
         Crea el usuario de una posta
@@ -191,9 +193,11 @@
         }
 
 - Path: **PUT** [ADMIN,POSTA] **'/v1/turno'** 
+
         NO IMPLEMENTADO
 
 - Path: **DELETE** [ADMIN] **'/v1/turno'** 
+
         NO IMPLEMENTADO
 
 - Path: **GET** [ADMIN,POSTA] **'/v1/turno/tabla'** 
